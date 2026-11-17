@@ -1,0 +1,290 @@
+{
+  "name": "Concept Guard IPA 2026 review-source deliverable",
+  "version": "0.1.0",
+  "compiled": false,
+  "tested": {
+    "json_structure": "PASS",
+    "python_syntax": "PASS",
+    "spreadsheet_zip_integrity": "PASS",
+    "rust_unit_tests": "NOT_RUN_NO_RUST_TOOLCHAIN",
+    "agent_hooks": "NOT_RUN_NO_HOST"
+  },
+  "source_files": 55,
+  "files": [
+    {
+      "path": ".github/workflows/concept-guard.yml",
+      "bytes": 1061,
+      "sha256": "e4d8e30cd14927015865e1670a4f4d7e08379a3cee4900d51d4456c0bed0fa1f"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 222,
+      "sha256": "b5236f803621ba17607cdb72fc0bdfbd2a2fc91377db2f60557c201f5b664a61"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 722,
+      "sha256": "93e409a5c8c80b6f674e80b2566271c844a52e59b7eb6a040d692369330ce402"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 488,
+      "sha256": "d201f3d76e5b237d92c83e3e73d46bf7eb32d62676f97dac866e1029c9fbc2ce"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1083,
+      "sha256": "b29407a315e809b62730cba90c6cc9e974ba1b6e95a942ee0bf43c7f07fab128"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6466,
+      "sha256": "0e30baf7c8d36e042fa92e46b811cdc8ce4798401a536178ba77937eb346aa30"
+    },
+    {
+      "path": "artifacts/要件トレーサビリティ.xlsx",
+      "bytes": 20937,
+      "sha256": "db77d6eeae4947673c1e91d782075fb3759eaf34baedf48fa1b0a98ecb670b28"
+    },
+    {
+      "path": "benchmarks/evaluate.py",
+      "bytes": 1661,
+      "sha256": "9c80d6a47a79af907c1f4113c53bbf2d2e5e2c368a577504cf36f5c1f0e14d4e"
+    },
+    {
+      "path": "benchmarks/evaluation.csv",
+      "bytes": 902,
+      "sha256": "8c95ae29f77d6edfeb988345af6fe0dc90fb763feb77b599cb35156eed0b2f51"
+    },
+    {
+      "path": "docs/architecture/01_components.mmd",
+      "bytes": 649,
+      "sha256": "e593a24cdd7af4a0dbdb02609ee62743da18b8eb05c5dc72b6758dd1eefd2d73"
+    },
+    {
+      "path": "docs/architecture/02_er.mmd",
+      "bytes": 860,
+      "sha256": "68e5a2029a097521b4485590f994ffcf23afa1101856b9ddab9f0f7d3afdc2e7"
+    },
+    {
+      "path": "docs/architecture/03_prompt_sequence.mmd",
+      "bytes": 867,
+      "sha256": "2f1fa61cdecf96ec289ffbacb381a1cc8096369543372ea6750c9839ca9b7744"
+    },
+    {
+      "path": "docs/architecture/04_decision_state.mmd",
+      "bytes": 753,
+      "sha256": "8d64a1461f038150a0ca84fcaca5de22fe8ed1965d69547aed684eeabeb2cd2f"
+    },
+    {
+      "path": "docs/ipa/00_成果物一覧・適合方針.md",
+      "bytes": 2624,
+      "sha256": "efa0cf147b4970832851c87ebc1240910178d95a5e5a290af70208a10b6fba82"
+    },
+    {
+      "path": "docs/ipa/01_要件定義書.md",
+      "bytes": 5333,
+      "sha256": "86baa5c25d32904759101128f70fb4ecbcdc28114c32b1d5d008738691117c91"
+    },
+    {
+      "path": "docs/ipa/02_基本設計書.md",
+      "bytes": 3333,
+      "sha256": "9b1218158910619a2cb9f42651d7fadb63c376e209af0db31129a920b30ce25e"
+    },
+    {
+      "path": "docs/ipa/03_詳細設計書.md",
+      "bytes": 7175,
+      "sha256": "aa79f40f38308c1afd1771357c52c1858d9838f2b28dc80c7d73bf1309e9d100"
+    },
+    {
+      "path": "docs/ipa/04_UT_単体試験仕様書.md",
+      "bytes": 2131,
+      "sha256": "a23941b8a8748c85b0578d32d1a4eb4782436564ffac7f1b8bdc8ce28e741cca"
+    },
+    {
+      "path": "docs/ipa/05_IT_結合試験仕様書.md",
+      "bytes": 2070,
+      "sha256": "f80b58fc8076aaee597ac59909e7fdaaa5ec470fdbc64e010fa962cd0af373ea"
+    },
+    {
+      "path": "docs/ipa/06_ST_総合試験仕様書.md",
+      "bytes": 2469,
+      "sha256": "8c2acc8eabbc719bdcd457aca5a11af58d9689bd577c5aaa04792b8172f4fc50"
+    },
+    {
+      "path": "docs/ipa/07_UAT_受入試験仕様書.md",
+      "bytes": 1402,
+      "sha256": "8b48ef04e0e3ca49a5bb9df8ffb65399e852fe37171cfe59c726a74d62ffe46d"
+    },
+    {
+      "path": "docs/ipa/08_非機能要件・性能設計.md",
+      "bytes": 2123,
+      "sha256": "2434decbf754b6b0a810bfd30102c73298fee8d73e2b30a06d92fe092ae8e107"
+    },
+    {
+      "path": "docs/ipa/09_移行・運用保守計画.md",
+      "bytes": 2358,
+      "sha256": "50369368e9e97a0f71a036c6ebbfff6c1763b5b07b871e30c2cd80153197bfea"
+    },
+    {
+      "path": "docs/ipa/10_変更管理・構成管理計画.md",
+      "bytes": 2145,
+      "sha256": "cc7cdc9107bb9a76b3c964aa0d59c199c1883175e7cf226ad3b3e4718cf864c1"
+    },
+    {
+      "path": "docs/ipa/11_リスク管理・残課題.md",
+      "bytes": 2358,
+      "sha256": "d326006b700df77bcb2fe50894ccbd02af4631c027c2a7b224fe6a8498e5fe42"
+    },
+    {
+      "path": "docs/ipa/12_WBS_開発計画.md",
+      "bytes": 1836,
+      "sha256": "8e975e3e2abc9241c98f45499eba2971f90c86e415c1e66bd967d67038afcf2f"
+    },
+    {
+      "path": "docs/ipa/13_検証記録・限界.md",
+      "bytes": 2292,
+      "sha256": "b29c18555684f44263986819168c22ac066809723f7c8a3ea68136ceaa368640"
+    },
+    {
+      "path": "docs/operations/CODEOWNERS.example",
+      "bytes": 222,
+      "sha256": "4fc97ccaf8283e92da7c6e3d02f535dac1743e1d9d4f6e9f55fe7672d400a64e"
+    },
+    {
+      "path": "docs/operations/INSTALLATION.md",
+      "bytes": 3535,
+      "sha256": "8b4da2c3bd46ef26a55125a0811ac02330cad78e9ef9e0606ebf6d0f7e12daa0"
+    },
+    {
+      "path": "docs/operations/RED_GREEN_AUDIT.md",
+      "bytes": 1940,
+      "sha256": "dbf2a7965faa01c4e2c4ca26ac23ecfe7decc76f9036e9ecadf95cac6f2193ba"
+    },
+    {
+      "path": "examples/demo-project/.concept-guard/config.toml",
+      "bytes": 221,
+      "sha256": "9a45007dba9537bcbfc98bd590060f8620ad184af2dc08aba9b6232e69ac47e5"
+    },
+    {
+      "path": "examples/demo-project/docs/requirements/qc.md",
+      "bytes": 428,
+      "sha256": "f065e4864a752ac8a5d3e4b830e37f513f4dbf21f9486caf84359ea61235c417"
+    },
+    {
+      "path": "examples/demo-project/src/import.rs",
+      "bytes": 124,
+      "sha256": "98b9ce3ab8d5e6dbb5260f8494ab7e2bfa538ad7632ba2b617e110cfac6ab66d"
+    },
+    {
+      "path": "plugins/claude/.claude-plugin/plugin.json",
+      "bytes": 198,
+      "sha256": "47f0a24df3ec3a4a83a57b341446ee13f4c6b6982f7516e77c96e7665d3f9a5f"
+    },
+    {
+      "path": "plugins/claude/.mcp.json",
+      "bytes": 111,
+      "sha256": "7106455ddc0640a14fbc0c12d6d9b331fe2d0ba45cbb28bbba024d9460a570f0"
+    },
+    {
+      "path": "plugins/claude/hooks/hooks.json",
+      "bytes": 505,
+      "sha256": "63a94e8fa5ff182f09aa7581d078aea3c29b1e0487890c7c4ba921f76ed03cd4"
+    },
+    {
+      "path": "plugins/claude/skills/concept-guard/SKILL.md",
+      "bytes": 899,
+      "sha256": "a5f4c637291141fa2a371606b2f28b3caa0718183c16cd120bd4d7f2a705ee7b"
+    },
+    {
+      "path": "plugins/codex/.codex-plugin/plugin.json",
+      "bytes": 128,
+      "sha256": "975b8195f05a4d7c1804a8c29ff87795235e1020031b0ad13b9d98b45164b137"
+    },
+    {
+      "path": "plugins/codex/hooks/hooks.json",
+      "bytes": 787,
+      "sha256": "5583aaa8a433cefd3edb91199e20d0bb7190a196a37eec44e72118aab1493671"
+    },
+    {
+      "path": "plugins/codex/mcp.json",
+      "bytes": 206,
+      "sha256": "281e3300647776527d2bfef22a8396f3c2deaafb4e15ff4b5a49cad7b0d0b7fa"
+    },
+    {
+      "path": "plugins/codex/plugin.json",
+      "bytes": 315,
+      "sha256": "863b6f191c0a54290da368810ecc1c821c2f6fb71c630f8061f28150b95ee0ae"
+    },
+    {
+      "path": "plugins/codex/skills/concept-guard/SKILL.md",
+      "bytes": 899,
+      "sha256": "a5f4c637291141fa2a371606b2f28b3caa0718183c16cd120bd4d7f2a705ee7b"
+    },
+    {
+      "path": "scripts/convert_requirements.py",
+      "bytes": 4953,
+      "sha256": "8ba4632875be6035a4b6e2751a38d1c134f32bb23149671144526f16ab69d986"
+    },
+    {
+      "path": "scripts/install_local.ps1",
+      "bytes": 245,
+      "sha256": "5d2df31046e120f5a3ff1701204abb2bd854a1ad8687bf82cda8ec4936cdd460"
+    },
+    {
+      "path": "scripts/install_local.sh",
+      "bytes": 219,
+      "sha256": "c10c7c084d4e9a142a215dc2e670feae16c36fe8d9271fb098c6015dac312750"
+    },
+    {
+      "path": "scripts/pre-commit",
+      "bytes": 81,
+      "sha256": "9c8cd48ad67c3761e94a34be3ab0853f5f7e915c9e17afdf9d587eb340b485d1"
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "bytes": 680,
+      "sha256": "cf04e54c5dd4e6f8d010a964e8791042d0d3091eb477844bd5ee17d25dddeec2"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 7714,
+      "sha256": "ae1bf8231ad3d4defd254cdfa4b010ffa3907880b83db925eb47a5df954c6592"
+    },
+    {
+      "path": "src/hooks.rs",
+      "bytes": 6688,
+      "sha256": "fd67441d75b85a0bfd8d57d6b192b50b42ed5646a2520df8b43b12353bf54e79"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 10432,
+      "sha256": "445b32e9b3f2ed865cb5be630ecd5960dcfeb80285b32c84d6f3b32e61fd62f0"
+    },
+    {
+      "path": "src/mcp.rs",
+      "bytes": 4882,
+      "sha256": "8f6388df0bd590c7b8ef7b6de23b08121da7f9bbf7a131072a6d411ae56d6356"
+    },
+    {
+      "path": "src/model.rs",
+      "bytes": 2404,
+      "sha256": "46bdfa1d62c33a446782434cfa5576a7fc9825da434d5fb7642b50a37fd45d7b"
+    },
+    {
+      "path": "src/parse.rs",
+      "bytes": 6295,
+      "sha256": "eb0678eee18fdb8332ef74f2296b573d19e185d55a50a25604921602e8177b98"
+    },
+    {
+      "path": "src/store.rs",
+      "bytes": 5310,
+      "sha256": "574df3f1eb7bd140ba14653a21845344639ced9b5e267b68c2e66dcab4ee9c3a"
+    },
+    {
+      "path": "tests/test_blackbox.py",
+      "bytes": 2524,
+      "sha256": "ac5efe33c75dde1f888cbb334b8c5d7be72745e6bfcfdac3689537c9f569facc"
+    }
+  ]
+}

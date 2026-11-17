@@ -1,0 +1,41 @@
+erDiagram
+  BASELINE ||--|{ REQUIREMENT : contains
+  REQUIREMENT ||--o{ CONSTRAINT : contains
+  REQUIREMENT ||--o{ ASSESSMENT_HIT : referenced_by
+  ASSESSMENT ||--o{ ASSESSMENT_HIT : includes
+  BASELINE ||--o{ ASSESSMENT : evaluated_against
+  ASSESSMENT ||--o{ DECISION : reviewed_in
+  BASELINE {
+    string digest PK
+    string project
+    string approved_at_epoch_seconds
+    int schema_version
+  }
+  REQUIREMENT {
+    string id PK
+    string source
+    int line
+    string section
+    string digest
+    string content
+  }
+  CONSTRAINT {
+    string kind
+    string text
+  }
+  ASSESSMENT {
+    string outcome
+    string action
+    string evidence_kind
+    string baseline_digest FK
+  }
+  ASSESSMENT_HIT {
+    string requirement_id FK
+    int score
+    string reason
+  }
+  DECISION {
+    string option
+    string reason
+    string human_approval_reference
+  }

@@ -1,0 +1,7 @@
+{
+  "name": "concept-guard",
+  "displayName": "Concept Guard",
+  "version": "0.1.0",
+  "description": "Protect approved requirement anchors and discuss proposed Concept drift",
+  "license": "MIT"
+}

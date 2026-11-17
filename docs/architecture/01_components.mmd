@@ -1,0 +1,16 @@
+flowchart TB
+    HUMAN[Human / Developer] --> AGENT[Codex / Claude / Other Agent]
+    AGENT --> HOOK[UserPromptSubmit / PreToolUse Hook]
+    HOOK --> CORE[Rust Concept Guard Core]
+    AGENT --> MCP[MCP stdio tools]
+    MCP --> CORE
+    REQ[Existing approved requirements] --> PARSER[Parser and fingerprint]
+    PARSER --> BLINE[Protected requirement baseline]
+    BLINE --> CORE
+    CORE --> IDX[(SQLite cache and FTS5)]
+    CORE --> REVIEW[Candidate divergence / Concept discussion]
+    REVIEW --> HUMAN
+    CORE --> DIFF[Git staged or branch diff evidence]
+    DIFF --> CI[Required CI]
+    BLINE --> CI
+    CI --> PROTECTED[Protected main branch]

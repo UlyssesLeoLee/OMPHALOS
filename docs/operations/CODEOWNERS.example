@@ -1,0 +1,4 @@
+# Customize the owner before enabling a protected PR workflow!
+# Place this file at .github/CODEOWNERS in the TARGET project.
+/docs/requirements/ @REPLACE_WITH_REVIEWER
+/.concept-guard/approved.json @REPLACE_WITH_REVIEWER

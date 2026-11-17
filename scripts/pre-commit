@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+set -eu
+concept-guard check-baseline
+concept-guard scan-staged

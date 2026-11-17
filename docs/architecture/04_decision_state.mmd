@@ -1,0 +1,14 @@
+stateDiagram-v2
+  [*] --> ApprovedBaseline
+  ApprovedBaseline --> Comparing: new user instruction
+  Comparing --> ApprovedBaseline: compatible / unknown-low-risk
+  Comparing --> DiscussionPending: conflict / new requirement / high-uncertainty
+  DiscussionPending --> Investigation: option D
+  Investigation --> DiscussionPending: more evidence
+  DiscussionPending --> Maintain: option A
+  DiscussionPending --> Experiment: option C
+  DiscussionPending --> RevisionProposed: option B
+  Maintain --> ApprovedBaseline: update downstream files only
+  Experiment --> ApprovedBaseline: experimental work isolated
+  RevisionProposed --> ProposedBaseline: revise requirements + init
+  ProposedBaseline --> ApprovedBaseline: human approval + protected PR review

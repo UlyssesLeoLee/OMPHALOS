@@ -1,0 +1,13 @@
+[project]
+name = "qc-demo"
+
+[requirements]
+paths = ["docs/requirements"]
+
+[guard]
+top_k = 3
+min_score = 2
+
+[[guard.extra_aliases]]
+canonical = "OCR"
+variants = ["光学字符识别", "光学文字识别", "文字認識"]

@@ -1,0 +1,5 @@
+{
+  "name": "concept-guard",
+  "version": "0.1.0",
+  "description": "Legacy manifest identity; root plugin.json is preferred"
+}

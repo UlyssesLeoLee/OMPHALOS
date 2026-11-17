@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "concept-guard": {
+      "type": "stdio",
+      "command": "concept-guard",
+      "args": ["mcp"]
+    }
+  }
+}

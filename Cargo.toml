@@ -1,0 +1,22 @@
+[package]
+name = "concept-guard"
+version = "0.1.0"
+edition = "2021"
+description = "Requirements-only concept guard: local retrieval, deterministic drift checks, human discussion gates and MCP"
+license = "MIT"
+
+[[bin]]
+name = "concept-guard"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+rusqlite = { version = "0.32", features = ["bundled"] }
+sha2 = "0.10"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1

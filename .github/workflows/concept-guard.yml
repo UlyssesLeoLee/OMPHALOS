@@ -1,0 +1,34 @@
+name: Concept Guard — requirements baseline
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  concept-guard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Rust unit tests
+        run: cargo test
+      - name: Compile release
+        run: cargo build --release
+      - name: Check project baseline
+        run: |
+          if [ -e .concept-guard/config.toml ]; then
+            ./target/release/concept-guard check-baseline
+          else
+            echo 'Project config absent; example-only repository, skip guard. Target repository MUST provide config.'
+          fi
+      - name: Scan branch for candidate divergence
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ -e .concept-guard/config.toml ]; then
+            ./target/release/concept-guard scan-branch "$BASE_SHA"
+          fi

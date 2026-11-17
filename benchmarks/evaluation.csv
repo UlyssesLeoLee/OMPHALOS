@@ -1,0 +1,11 @@
+prompt,expected_requirement,expected_outcome,notes
+中国侧导入时新增 OCR 识别,REQ-QC-001,conflict,explicit forbidden positive action
+中国侧导入时移除 OCR,REQ-QC-001,compatible,forbidden action being removed
+中国側で OCR を追加,REQ-QC-001,conflict,Japanese alias and scope may require tuning
+增加中国侧结构化QC导入支持,REQ-QC-001,compatible,compatible extension
+中国侧导入时必须保留原始文件,REQ-QC-002,compatible,source provenance
+对比界面不要包括未映射字段,REQ-QC-003,compatible,compatible negative directive
+中国与日本QC对比增加未映射字段,REQ-QC-003,conflict,semantic mismatch NOT encoded MUST_NOT: expect miss
+将日本对比默认显示全部,REQ-QC-003,conflict,semantic default inversion: expect miss
+请整理项目README,,uncertain,non-requirement request
+新增可视化管理看板,,new_requirement,missing coverage

@@ -1,0 +1,32 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "concept-guard hook prompt",
+            "commandWindows": "concept-guard.exe hook prompt",
+            "statusMessage": "Checking new request against approved requirements",
+            "timeout": 10,
+            "onFailure": "block"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "concept-guard hook pretool",
+            "commandWindows": "concept-guard.exe hook pretool",
+            "statusMessage": "Protecting approved requirement anchors",
+            "timeout": 10,
+            "onFailure": "block"
+          }
+        ]
+      }
+    ]
+  }
+}

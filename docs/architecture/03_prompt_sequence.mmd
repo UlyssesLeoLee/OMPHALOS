@@ -1,0 +1,26 @@
+sequenceDiagram
+    autonumber
+    actor H as Human
+    participant A as AI Agent
+    participant K as Input Hook
+    participant C as Rust Core
+    participant B as Approved baseline
+    participant M as MCP
+    H->>A: New request
+    A->>K: UserPromptSubmit event
+    K->>C: assess(prompt)
+    C->>B: read approved requirements
+    B-->>C: requirement clauses
+    C-->>K: outcome + top 3 evidence
+    alt No explicit divergence
+       K-->>A: allow + minimal related context
+       A-->>H: proceed with work
+    else Suspected contradiction / new requirement
+       K-->>H: block + source lines + A/B/C/D
+       H->>A: Discuss Concept
+       A->>M: concept_discuss
+       M-->>A: approved clause and conflict
+       A-->>H: decision options and impact
+       H->>C: local human TTY decision
+       C-->>H: audit decision; reapproval if requirements changed
+    end

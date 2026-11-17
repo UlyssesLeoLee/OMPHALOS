@@ -1,0 +1,8 @@
+/target/
+**/.concept-guard/cache.sqlite
+**/.concept-guard/audit.jsonl
+**/.concept-guard/pending.json
+**/.concept-guard/pending_discussion.json
+**/.concept-guard/review-proposals/
+*.log
+**/.concept-guard/change_permit.json

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "concept-guard": {
+      "command": "concept-guard",
+      "args": ["mcp"]
+    }
+  }
+}
